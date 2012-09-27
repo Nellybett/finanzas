@@ -1,0 +1,24 @@
+<h1>Listing income_events</h1>
+
+<table>
+  <tr>
+    <th>Income</th>
+    <th>Event</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @income_events.each do |income_event| %>
+  <tr>
+    <td><%= income_event.income %></td>
+    <td><%= income_event.event %></td>
+    <td><%= link_to 'Show', income_event %></td>
+    <td><%= link_to 'Destroy', income_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Income event', new_income_event_path %>

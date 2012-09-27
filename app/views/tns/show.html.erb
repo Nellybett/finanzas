@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tn id:</b>
+  <%= @tn.tn_Id %>
+</p>
+
+<p>
+  <b>Tn taker:</b>
+  <%= @tn.tn_Taker %>
+</p>
+
+<p>
+  <b>Tn name:</b>
+  <%= @tn.tn_Name %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= @tn.program %>
+</p>
+
+<p>
+  <b>Tn manager name:</b>
+  <%= @tn.tn_Manager_Name %>
+</p>
+
+<p>
+  <b>Tn manager email:</b>
+  <%= @tn.tn_Manager_Email %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_tn_path(@tn) %> |
+<%= link_to 'Back', tns_path %>

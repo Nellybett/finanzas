@@ -1,0 +1,39 @@
+<div class="title"> Listing EP</div>
+
+<table id="hor-zebra" summary="EP Audit">
+  <thead>
+    	<tr>
+	    <th scope="col">EP Id</th>
+            <th scope="col">EP Name</th>
+            <th scope="col">EP Lastname</th>
+            <th scope="col">Program</th>
+	    <th scope="col">EP Manager Name</th>
+            <th scope="col">EP Manager Email</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+
+<% @eps.each do |ep| %>
+  <tr class="odd">
+    <td><%= ep.ep_Id %></td>
+    <td><%= ep.ep_Name %></td>
+    <td><%= ep.ep_Lastname %></td>
+    <td><%= ep.program %></td>
+    <td><%= ep.ep_Manager_Name %></td>
+    <td><%= ep.ep_Manager_Email %></td>
+    <td><%= link_to 'Show', ep %></td>
+    <td><%= link_to 'Edit', edit_ep_path(ep) %></td>
+    <td><%= link_to 'Destroy', ep, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Ep', new_ep_path %> | 
+<%= link_to 'Back', "/home/index" %>

@@ -1,0 +1,25 @@
+<h1>Listing egress_events</h1>
+
+<table>
+  <tr>
+    <th>Egress</th>
+    <th>Event</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @egress_events.each do |egress_event| %>
+  <tr>
+    <td><%= egress_event.egress %></td>
+    <td><%= egress_event.event %></td>
+    <td><%= link_to 'Show', egress_event %></td>
+    <td><%= link_to 'Edit', edit_egress_event_path(egress_event) %></td>
+    <td><%= link_to 'Destroy', egress_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Egress event', new_egress_event_path %>

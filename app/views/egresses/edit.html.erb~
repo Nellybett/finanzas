@@ -1,0 +1,6 @@
+<h1>Editing egress</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @egress %> |
+<%= link_to 'Back', egresses_path %>

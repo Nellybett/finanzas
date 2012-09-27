@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Egress:</b>
+  <%= @egress_event.egress.reason %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @egress_event.event.name %>
+</p>
+
+
+<%= link_to 'Back', egress_path %>

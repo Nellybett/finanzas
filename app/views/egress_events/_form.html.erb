@@ -1,0 +1,28 @@
+<%= form_for(@egress_event) do |f| %>
+  <% if @egress_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@egress_event.errors.count, "error") %> prohibited this egress_event from being saved:</h2>
+
+      <ul>
+      <% @egress_event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="field">
+    <%= hidden_field_tag(:egress, @egress.id)%>
+  </div>
+
+  <div class="field">
+    <%= f.label :event %><br />
+    <%= select_tag(:event_id, options_from_collection_for_select(Event.all,:id, :name)) %>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

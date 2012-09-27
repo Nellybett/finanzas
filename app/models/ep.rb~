@@ -1,0 +1,4 @@
+class Ep < ActiveRecord::Base
+  belongs_to :user
+  attr_accessible :user, :ep_Id, :ep_Lastname, :ep_Manager_Email, :ep_Manager_Name, :ep_Name, :program
+end

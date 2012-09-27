@@ -1,0 +1,2 @@
+module EgressesHelper
+end

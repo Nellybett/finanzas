@@ -1,0 +1,44 @@
+<div class="title">Listing egresses</div>
+
+
+<table id="hor-zebra" summary="Income">
+  <thead>
+    	<tr>
+            <th scope="col">Reason</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Type of payment</th>
+	    <th scope="col">Operation Number</th>
+            <th scope="col">Date</th>
+	    <th scope="col">Invoice Number</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+<%tot=0%>
+<% @egresses.each do |egress| %>
+  <tr class="odd">
+    <td><%= egress.reason %></td>
+    <td><%= egress.amount %></td>
+    <td><%= egress.type_of_Payment %></td>
+    <td><%= egress.operation_Number %></td>
+    <td><%= egress.date %></td>
+    <td><%= egress.invoice_Number %></td>
+    <td><%= link_to 'Show', egress %></td>
+    <td><%= link_to 'Edit', edit_egress_path(egress) %></td>
+    <td><%= link_to 'Destroy', egress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% tot=tot+(egress.amount).to_f %>
+<% end %>
+</tbody>
+</table>
+
+<b>Total:   <%= tot %> </b>
+
+<br/>
+<br/>
+
+<%= link_to 'New Egress', new_egress_path %> | 
+<%= link_to 'Back', root_path %>

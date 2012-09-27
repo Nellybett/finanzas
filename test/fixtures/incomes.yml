@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  reason: MyString
+  amount: MyString
+  type_of_Payment: MyString
+  operation_Number: MyString
+  deposit_Date: 2012-09-24
+  invoice_Number: MyString
+
+two:
+  user: 
+  reason: MyString
+  amount: MyString
+  type_of_Payment: MyString
+  operation_Number: MyString
+  deposit_Date: 2012-09-24
+  invoice_Number: MyString

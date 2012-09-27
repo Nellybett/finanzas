@@ -1,0 +1,30 @@
+<div class="title"> List links</div>
+
+<table id="hor-zebra" summary="EP Audit">
+  <thead>
+    	<tr>
+	    <th scope="col">Income</th>
+            <th scope="col">EP</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+
+<% @income_eps.each do |income_ep| %>
+  <tr class="odd">
+    <td><%= income_ep.income.reason %></td>
+    <td><%= income_ep.ep.ep_Name %></td>
+    <td><%= link_to 'Show', income_ep %></td>
+    <td><%= link_to 'Edit', edit_income_ep_path(income_ep) %></td>
+    <td><%= link_to 'Destroy', income_ep, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Income ep', new_income_ep_path %>

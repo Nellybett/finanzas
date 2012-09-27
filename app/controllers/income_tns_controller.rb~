@@ -1,0 +1,90 @@
+class IncomeTnsController < ApplicationController
+  # GET /income_tns
+  # GET /income_tns.json
+  def index
+    @income_tns = IncomeTn.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @income_tns }
+    end
+  end
+
+  # GET /income_tns/1
+  # GET /income_tns/1.json
+  def show
+    @income_tn = IncomeTn.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @income_tn }
+      
+
+    end
+  end
+
+  # GET /income_tns/new
+  # GET /income_tns/new.json
+  def new
+    @income_tn = IncomeTn.new
+    @income = Income.find(params[:id])
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @income_tn }
+      format.json { render json: @income}
+    end
+  end
+
+  # GET /income_tns/1/edit
+  def edit
+    @income_tn = IncomeTn.find(params[:id])
+  end
+
+  # POST /income_tns
+  # POST /income_tns.json
+  def create
+    @income_tn = IncomeTn.new(params[:income_tn])
+    i=Income.find(params[:income])
+    @income_tn.tn = (Tn.where(:tn_Id => params[:tn_Id])).first
+    @income_tn.income=i
+
+    respond_to do |format|
+      if @income_tn.save
+        format.html { redirect_to @income_tn, notice: 'Income tn was successfully created.' }
+        format.json { render json: @income_tn, status: :created, location: @income_tn }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @income_tn.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /income_tns/1
+  # PUT /income_tns/1.json
+  def update
+    @income_tn = IncomeTn.find(params[:id])
+
+    respond_to do |format|
+      if @income_tn.update_attributes(params[:income_tn])
+        format.html { redirect_to @income_tn, notice: 'Income tn was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @income_tn.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /income_tns/1
+  # DELETE /income_tns/1.json
+  def destroy
+    @income_tn = IncomeTn.find(params[:id])
+    @income_tn.destroy
+
+    respond_to do |format|
+      format.html { redirect_to incomes_url }
+      format.json { head :no_content }
+    end
+  end
+end

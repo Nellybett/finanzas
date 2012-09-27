@@ -1,0 +1,27 @@
+<%= form_for(@income_ep) do |f| %>
+  <% if @income_ep.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@income_ep.errors.count, "error") %> prohibited this income_ep from being saved:</h2>
+
+      <ul>
+      <% @income_ep.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= hidden_field_tag(:income_id, @income) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ep %><br />
+    <%= select_tag(:ep_Id, options_from_collection_for_select(Ep.all,:ep_Id, :ep_Name)) %>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

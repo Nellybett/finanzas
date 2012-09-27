@@ -1,0 +1,25 @@
+<h1>Listing income_tns</h1>
+
+<table>
+  <tr>
+    <th>Income</th>
+    <th>Tn</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @income_tns.each do |income_tn| %>
+  <tr>
+    <td><%= income_tn.income %></td>
+    <td><%= income_tn.tn %></td>
+    <td><%= link_to 'Show', income_tn %></td>
+    <td><%= link_to 'Edit', edit_income_tn_path(income_tn) %></td>
+    <td><%= link_to 'Destroy', income_tn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Income tn', new_income_tn_path %>
