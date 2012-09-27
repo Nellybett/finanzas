@@ -1,0 +1,39 @@
+<div class="title"> Listing TN </div>
+
+<table id="hor-zebra" summary="TN Audit">
+  <thead>
+    	<tr>
+	    <th scope="col">TN Id</th>
+            <th scope="col">TN Taker</th>
+            <th scope="col">TN Name</th>
+            <th scope="col">Program</th>
+	    <th scope="col">TN Manager Name</th>
+            <th scope="col">TN Manager Email</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+    	
+<% @tns.each do |tn| %>
+  <tr class="odd">
+    <td><%= tn.tn_Id %></td>
+    <td><%= tn.tn_Taker %></td>
+    <td><%= tn.tn_Name %></td>
+    <td><%= tn.program %></td>
+    <td><%= tn.tn_Manager_Name %></td>
+    <td><%= tn.tn_Manager_Email %></td>
+    <td><%= link_to 'Show', tn %></td>
+    <td><%= link_to 'Edit', edit_tn_path(tn) %></td>
+    <td><%= link_to 'Destroy', tn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Tn', new_tn_path %> | 
+<%= link_to 'Back', "/home/index" %>

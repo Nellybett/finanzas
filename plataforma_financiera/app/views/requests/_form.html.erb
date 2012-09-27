@@ -1,0 +1,64 @@
+<%= form_for(@request) do |f| %>
+  <% if @request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+      <% @request.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reason %><br />
+    <%= f.text_field :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :request_Date %><br />
+    <%= f.date_select :request_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :identification %><br />
+    <%= f.text_field :identification %>
+  </div>
+  <div class="field">
+    <%= f.label :account_Type %><br />
+    <%= f.text_field :account_Type %>
+  </div>
+  <div class="field">
+    <%= f.label :acount_Number %><br />
+    <%= f.text_field :acount_Number %>
+  </div>
+  <div class="field">
+    <%= f.label :bank %><br />
+    <%= f.text_field :bank %>
+  </div>
+  <div class="field">
+    <%= f.label :para %><br />
+    <%= select_tag(:para, options_from_collection_for_select(User.select(:committee).uniq,:committee,:committee)) %>
+  </div>
+  <br/>
+  <br/>
+  <% if session[:user].last_Name=='F&L' %>
+ <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <% end %>
+  
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

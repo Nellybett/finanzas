@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ep id:</b>
+  <%= @ep.ep_Id %>
+</p>
+
+<p>
+  <b>Ep name:</b>
+  <%= @ep.ep_Name %>
+</p>
+
+<p>
+  <b>Ep lastname:</b>
+  <%= @ep.ep_Lastname %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= @ep.program %>
+</p>
+
+<p>
+  <b>Ep manager name:</b>
+  <%= @ep.ep_Manager_Name %>
+</p>
+
+<p>
+  <b>Ep manager email:</b>
+  <%= @ep.ep_Manager_Email %>
+</p>
+
+
+<%= link_to 'Edit', edit_ep_path(@ep) %> |
+<%= link_to 'Back', eps_path %>

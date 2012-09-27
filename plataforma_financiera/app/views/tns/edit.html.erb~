@@ -1,0 +1,6 @@
+<h1>Editing tn</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @tn %> |
+<%= link_to 'Back', tns_path %>

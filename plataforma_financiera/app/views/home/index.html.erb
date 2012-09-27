@@ -1,0 +1,73 @@
+<div class="title">Welcome
+<% if ((session[:user]).nil?)==false%>
+<%= (session[:user].username)%>!!</div>
+<% end %>
+<br/>
+<br/>
+<% if session[:user].role=='Admin' %>
+<div class="title">Administrar</div>
+<%end%>
+<% if session[:user].role=='Admin' || session[:user].role=='Member' %>
+<%= link_to 'Solicitudes', requests_url %>
+<% end %>
+<br/>
+<br/>
+		<div id="accordion">
+			<div>
+                                <% if session[:user].role=='Admin' %>  
+				<h3><a href="#">Usuarios</a></h3>
+				<div>			
+                                <%= link_to 'Usuarios', users_url %>
+                                <% end %>
+
+				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].last_Name!='F&L')) %>
+			        <h3><a href="#"> Ingresos </a></h3>
+				<div>
+                                <%end%>				
+				
+                                <% if session[:user].last_Name=='F&L' && (session[:user].role=='Member') %>
+			        <h3><a href="#"> Ingresos </a></h3>
+				<div>
+  				<%= link_to 'Ingresos', '/incomes' %> <br/>				
+				<% end %>
+
+				<br/><br/></div>
+			</div>
+			<div>
+				<% if session[:user].role=='Admin' %>  
+				<h3><a href="#"> Ingresos - Egresos</a></h3>
+				<div>
+				<%= link_to 'Ingresos', '/incomes' %> <br/>
+				<%= link_to 'Egresos', '/egresses' %>
+                                <%end%>
+
+				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].last_Name!='F&L')) %>
+			        <h3><a href="#"> Egresos </a></h3>
+                                <div>
+				<%end%>
+				
+				<% if session[:user].last_Name=='F&L' && (session[:user].role=='Member') %>
+			        <h3><a href="#"> Egresos </a></h3>
+				<div>
+  				<%= link_to 'Egresos', '/egresses' %>				
+				<% end %>
+
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Registrar EP-TN-Evento</a></h3>
+				<div> 
+				<% if (session[:user].role=='Member' || session[:user].role=='Admin') %>			
+				<%= link_to 'EPs', '/eps' %>
+				<br/>
+				<%= link_to 'TNs', '/tns' %>
+				<br/>
+				<%= link_to 'Eventos', '/events' %>				
+				<br/>
+                                <% end %>
+				</div>
+
+			</div>
+		</div>
+
+

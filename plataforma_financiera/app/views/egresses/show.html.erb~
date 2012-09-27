@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reason:</b>
+  <%= @egress.reason %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @egress.amount %>
+</p>
+
+<p>
+  <b>Type of payment:</b>
+  <%= @egress.type_of_Payment %>
+</p>
+
+<p>
+  <b>Operation number:</b>
+  <%= @egress.operation_Number %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @egress.date %>
+</p>
+
+<p>
+  <b>Invoice number:</b>
+  <%= @egress.invoice_Number %>
+</p>
+
+
+<table id="hor-zebra" summary="Link">
+  <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+  </thead>
+
+ <tbody>
+
+<% eveg=(EgressEvent.where("egress_id = ?",@egress.id)).first %>
+
+<% if (eveg.nil?) == false %>
+<% ev=(Event.where("id = ?",eveg.event.id)).first %>
+  <tr class="odd">
+    <td><%= ev.name %></td>
+    <td><%= ev.event_Date %></td>
+    <td><%= ev.profit %></td>
+    <td><%= ev.expense %></td>
+    <td><%= link_to 'Destroy', eveg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+
+
+
+
+
+</tbody>
+</table>
+
+
+
+
+<%= link_to 'Edit', edit_egress_path(@egress) %> |
+<%= link_to 'Link Egress-Event', new_egress_event_path(@egress) %> |
+<%= link_to 'Back', egresses_path %>

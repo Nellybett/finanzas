@@ -1,0 +1,48 @@
+<div class="title">Listing Incomes</div>
+
+<table id="hor-zebra" summary="Income">
+  <thead>
+    	<tr>
+            <th scope="col">Reason</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Type of payment</th>
+	    <th scope="col">Operation Number</th>
+            <th scope="col">Deposit Date</th>
+	    <th scope="col">Invoice Number</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+
+<%tot=0%>
+<% @incomes.each do |income| %>
+  <tr class="odd">
+    <td><%= income.reason %></td>
+    <td><%= income.amount %></td>
+    <td><%= income.type_of_Payment %></td>
+    <td><%= income.operation_Number %></td>
+    <td><%= income.deposit_Date %></td>
+    <td><%= income.invoice_Number %></td>
+    <td><%= link_to 'Show', income %></td>
+    <td><%= link_to 'Edit', edit_income_path(income) %></td>
+    <td><%= link_to 'Destroy', income, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+  <% tot=tot+(income.amount).to_f %>
+<% end %>
+</tbody>
+</table>
+
+<b>Total:   <%= tot %></b>
+
+<br/>
+<br/>
+
+
+<br />
+
+<%= link_to 'New Income', new_income_path %> | 
+<%= link_to 'Back', "/home/index" %>

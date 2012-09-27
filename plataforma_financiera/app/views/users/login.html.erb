@@ -1,0 +1,17 @@
+
+<%= form_tag 'logins', :multipart => true do %>
+    <div class="title"> Login </div>
+
+  <label for="user_login">Login:</label><br/>
+  <%= text_field "user", "username", :size => 20 %><br/>
+
+  <label for="user_password">Password:</label><br/>
+  <%= password_field "user", "password", :size => 20 %><br/>
+
+<%= submit_tag "Submit" %>
+
+    <%= link_to 'Register', '/users/signup' %> |
+    <%= link_to 'Forgot my password', '/users/forgot_password' %>
+
+<% end  %>
+

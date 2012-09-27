@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reason:</b>
+  <%= @request.reason %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @request.amount %>
+</p>
+
+<p>
+  <b>Request date:</b>
+  <%= @request.request_Date %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @request.name %>
+</p>
+
+<p>
+  <b>Identification:</b>
+  <%= @request.identification %>
+</p>
+
+<p>
+  <b>Account type:</b>
+  <%= @request.account_Type %>
+</p>
+
+<p>
+  <b>Acount number:</b>
+  <%= @request.acount_Number %>
+</p>
+
+<p>
+  <b>Bank:</b>
+  <%= @request.bank %>
+</p>
+
+<p>
+  <b>Para:</b>
+  <%= @request.para %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

@@ -1,0 +1,105 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reason:</b>
+  <%= @income.reason %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @income.amount %>
+</p>
+
+<p>
+  <b>Type of payment:</b>
+  <%= @income.type_of_Payment %>
+</p>
+
+<p>
+  <b>Operation number:</b>
+  <%= @income.operation_Number %>
+</p>
+
+<p>
+  <b>Deposit date:</b>
+  <%= @income.deposit_Date %>
+</p>
+
+<p>
+  <b>Invoice number:</b>
+  <%= @income.invoice_Number %>
+</p>
+
+
+<table id="hor-zebra" summary="Link">
+  <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+  </thead>
+
+ <tbody>
+<% epin=(IncomeEp.where("income_id = ?",@income.id)).first %>
+<% if (epin.nil?) == false %>
+
+<% ep=(Ep.where("ep_id = ?",epin.ep.ep_Id)).first %>
+  <tr class="odd">
+    <td> EP </td>
+    <td><%= ep.ep_Id %></td>
+    <td><%= ep.ep_Name %></td>
+    <td><%= ep.ep_Lastname %></td>
+    <td><%= ep.program %></td>
+    <td><%= link_to 'Destroy', epin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+
+
+
+
+<% tnin=(IncomeTn.where("income_id = ?",@income.id)).first %>
+
+<% if (tnin.nil?) == false %>
+<% tn=(Tn.where("tn_id = ?",tnin.tn.tn_Id)).first %>
+  <tr class="odd">
+    <td> TN </td>
+    <td><%= tn.tn_Id %></td>
+    <td><%= tn.tn_Taker %></td>
+    <td><%= tn.tn_Name %></td>
+    <td><%= tn.program %></td>
+    <td><%= link_to 'Destroy', tnin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+
+
+<% evin=(IncomeEvent.where("income_id = ?",@income.id)).first %>
+
+<% if (evin.nil?) == false %>
+<% ev=(Event.where("id = ?",evin.event.id)).first %>
+  <tr class="odd">
+    <td> EVENTO </td>
+    <td><%= ev.name %></td>
+    <td><%= ev.event_Date %></td>
+    <td><%= ev.profit %></td>
+    <td><%= ev.expense %></td>
+    <td><%= link_to 'Destroy', evin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+
+
+
+
+
+</tbody>
+</table>
+
+
+<%= link_to 'Edit', edit_income_path(@income) %> |
+<%= link_to 'Link Income-Ep', new_income_ep_path(@income) %> |
+<%= link_to 'Link Income-Tn', new_income_tn_path(@income) %> |
+<%= link_to 'Link Income-Event', new_income_event_path(@income) %> |
+<%= link_to 'Back', incomes_path %>

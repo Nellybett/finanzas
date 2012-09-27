@@ -1,0 +1,42 @@
+<div class="title">Listing users</div>
+<table id="hor-zebra" summary="Income">
+  <thead>
+    	<tr>
+	    <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Name</th>
+            <th scope="col">Area Funcional</th>
+	    <th scope="col">Committee</th>
+            <th scope="col">Password</th>
+	    <th scope="col">Phone</th>
+	    <th scope="col">Role</th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+    	    <th scope="col"></th>
+        </tr>
+  </thead>
+    
+ <tbody>
+
+<% @users.each do |user| %>
+  <tr class="odd">
+    <td><%= user.username %></td>
+    <td><%= user.email %></td>
+    <td><%= user.first_Name %></td>
+    <td><%= user.last_Name %></td>
+    <td><%= user.committee %></td>
+    <td><%= user.password %></td>
+    <td><%= user.phone %></td>
+    <td><%= user.role %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  reason: MyString
+  amount: MyString
+  request_Date: 2012-09-25
+  name: MyString
+  identification: MyString
+  account_Type: MyString
+  acount_Number: MyString
+  bank: MyString
+  type: 
+  user: 
+
+two:
+  reason: MyString
+  amount: MyString
+  request_Date: 2012-09-25
+  name: MyString
+  identification: MyString
+  account_Type: MyString
+  acount_Number: MyString
+  bank: MyString
+  type: 
+  user: 

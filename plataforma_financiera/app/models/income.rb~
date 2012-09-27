@@ -1,0 +1,4 @@
+class Income < ActiveRecord::Base
+  belongs_to :user
+  attr_accessible :user, :amount, :deposit_Date, :invoice_Number, :operation_Number, :reason, :type_of_Payment
+end

@@ -1,0 +1,4 @@
+class Request < ActiveRecord::Base
+  belongs_to :user
+  attr_accessible :account_Type, :acount_Number, :amount, :bank, :identification, :name, :reason, :request_Date, :para,:user, :status
+end

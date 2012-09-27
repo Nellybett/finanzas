@@ -1,0 +1,84 @@
+class TnsController < ApplicationController
+  # GET /tns
+  # GET /tns.json
+  def index
+    @tns = Tn.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @tns }
+    end
+  end
+
+  # GET /tns/1
+  # GET /tns/1.json
+  def show
+    @tn = Tn.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @tn }
+    end
+  end
+
+  # GET /tns/new
+  # GET /tns/new.json
+  def new
+    @tn = Tn.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @tn }
+    end
+  end
+
+  # GET /tns/1/edit
+  def edit
+    @tn = Tn.find(params[:id])
+  end
+
+  # POST /tns
+  # POST /tns.json
+  def create
+    u=u=User.find(session[:user])
+    @tn = Tn.new(params[:tn])
+    @tn.user=u
+    respond_to do |format|
+      if @tn.save
+        format.html { redirect_to @tn, notice: 'Tn was successfully created.' }
+        format.json { render json: @tn, status: :created, location: @tn }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @tn.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /tns/1
+  # PUT /tns/1.json
+  def update
+    @tn = Tn.find(params[:id])
+
+    respond_to do |format|
+      if @tn.update_attributes(params[:tn])
+        format.html { redirect_to @tn, notice: 'Tn was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @tn.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /tns/1
+  # DELETE /tns/1.json
+  def destroy
+    @tn = Tn.find(params[:id])
+    @tn.destroy
+
+    respond_to do |format|
+      format.html { redirect_to tns_url }
+      format.json { head :no_content }
+    end
+  end
+end

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>AIESEC F&L</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+  		<%= javascript_include_tag "application" %>
+   		<%= csrf_meta_tags %>
+        
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '/assets/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3" });
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			.demoHeaders { margin-top: 2em; }
+			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}
+		</style>
+	<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans|Muli">
+
+	</head>
+	<body>
+	
+	<div id="main">
+
+			<div  id="header">
+
+				<div id="logo"><img src="/assets/logo.png" /></div>
+				<a href="http://www.facebook.com/" id="fb"></a>
+				<a href="http://www.twitter.com/" id="tw"></a>
+				<form id="buscador" action="" method="POST">
+
+					<input type="text" id="buscar" name="buscar" />
+					<input type="image" src="/assets/buscar.png" id="buscando" />
+
+				</form>
+
+			</div><div id="menu">
+				<% if (session[:user]).nil? %>
+				<a href="/home/principal" class="boton">Inicio</a>
+				<% end %>
+				<% if ((session[:user]).nil?)==false %>	
+				<a href="/home/index" class="boton"> Plataforma</a>
+				<% end %>
+				<a href="fundamentosfinan.html" class="boton">Fundamentos Financieros</a>
+				<a href="fundamentosleg.html" class="boton">Fundamentos Legales</a>
+				<% if (session[:user]).nil? %>
+				<a href="/users/login" class="boton">Plataforma - Login</a>
+				<% end %>
+				<a href="contacto.html" class="boton">Contacto</a>
+				<% if ((session[:user]).nil?)==false %>					
+				<a href="/users/logout" class="boton">Plataforma - Logout</a>				
+				<% end %>
+				
+
+			</div>
+		<br />
+		<br />
+		<br />
+	
+		<%= yield %>
+	
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+
+				
+
+			<div id="footer">
+			<p>For full instructions go to <a href="http://slidesjs.com" target="_blank">http://slidesjs.com</a>.</p>
+			<p>Slider design by Orman Clark at <a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a>. You can donwload the source PSD at <a href="http://www.premiumpixels.com/clean-simple-image-slider-psd/" target="_blank">Premium Pixels</a></p>
+			<p>&copy; 2010 <a href="http://nathansearles.com" target="_blank">Nathan Searles</a>. All rights reserved. Slides is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache license</a>.</p>
+			</div>
+
+		</div>
+
+		
+
+	</body>
+</html>
