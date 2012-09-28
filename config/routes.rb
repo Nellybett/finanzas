@@ -8,6 +8,7 @@ Finanzasylegal::Application.routes.draw do
   match "/users/change_passwords" => "Users#change_password"
   match "/users/forgot_passwords" => "Users#forgot_password"
   match "/users/logins" => "Users#login"
+  match "/users/signups" => "Users#signup"
   get "home/principal"
   get "home/index" => "Home#index"
   match "/income_eps/new.:id/" => "Income_eps#new"
@@ -15,7 +16,7 @@ Finanzasylegal::Application.routes.draw do
   match "/income_tns/new.:id/" => "Income_tns#new"
   match "/egress_events/new.:id/" => "Egress_events#new"
   match "/users/logout" => "Users#logout"
-  match "/users/signups" => "Users#signup"
+  
   get "users/forgot_password"
   get "users/change_password"
   get "users/signup"

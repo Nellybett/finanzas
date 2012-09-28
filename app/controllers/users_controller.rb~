@@ -98,8 +98,9 @@ def update
 
 def signup
     @user = User.new(params[:user])
-    if request.post?
     @user.role='Nuevo'
+    if request.post?
+    
       if @user.save
         session[:user] = User.authenticate(@user.username, @user.password)
         flash[:message] = "Signup successful"

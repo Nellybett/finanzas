@@ -98,6 +98,8 @@ def update
 
 def signup
     @user = User.new(params[:user])
+    @user.committee=(params[:committee])
+    @user.area=(params[:area])
     @user.role='Nuevo'
     if request.post?
     

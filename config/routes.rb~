@@ -1,10 +1,6 @@
 Finanzasylegal::Application.routes.draw do
 
 
-
-
-  resources :requests
-
   root :to => 'Home#principal'
 
   get "home/index"
@@ -24,7 +20,7 @@ Finanzasylegal::Application.routes.draw do
   get "users/change_password"
   get "users/signup"
   resources :income_tns
-
+  resources :requests
   resources :income_eps
   resources :egress_events
 
