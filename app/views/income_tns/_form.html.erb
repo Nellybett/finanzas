@@ -17,7 +17,7 @@
 
   <div class="field">
     <%= f.label :tn %><br />
-    <%= select_tag(:tn_Id, options_from_collection_for_select(Tn.all,:tn_Id, :tn_Taker)) %>
+    <%= select_tag(:tn, options_from_collection_for_select(Tn.all,:id, :tn_taker)) %>
   </div>
   <br/>
   <br/>

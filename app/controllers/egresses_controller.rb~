@@ -121,8 +121,9 @@ class EgressesController < ApplicationController
       format.html { redirect_to egresses_url }
       format.json { head :no_content }
     end
-  end
+  
    else
       redirect_to "/home/principal"
    end
+end
 end

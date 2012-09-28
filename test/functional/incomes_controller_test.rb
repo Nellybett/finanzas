@@ -18,7 +18,7 @@ class IncomesControllerTest < ActionController::TestCase
 
   test "should create income" do
     assert_difference('Income.count') do
-      post :create, income: { amount: @income.amount, deposit_Date: @income.deposit_Date, invoice_Number: @income.invoice_Number, operation_Number: @income.operation_Number, reason: @income.reason, type_of_Payment: @income.type_of_Payment }
+      post :create, income: { amount: @income.amount, deposit_date: @income.deposit_date, invoice_number: @income.invoice_number, operation_number: @income.operation_number, reason: @income.reason, type_of_payment: @income.type_of_payment }
     end
 
     assert_redirected_to income_path(assigns(:income))
@@ -35,7 +35,7 @@ class IncomesControllerTest < ActionController::TestCase
   end
 
   test "should update income" do
-    put :update, id: @income, income: { amount: @income.amount, deposit_Date: @income.deposit_Date, invoice_Number: @income.invoice_Number, operation_Number: @income.operation_Number, reason: @income.reason, type_of_Payment: @income.type_of_Payment }
+    put :update, id: @income, income: { amount: @income.amount, deposit_date: @income.deposit_date, invoice_number: @income.invoice_number, operation_number: @income.operation_number, reason: @income.reason, type_of_payment: @income.type_of_payment }
     assert_redirected_to income_path(assigns(:income))
   end
 

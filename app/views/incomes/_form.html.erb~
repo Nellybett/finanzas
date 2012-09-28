@@ -20,20 +20,20 @@
     <%= f.text_field :amount %>
   </div>
   <div class="field">
-    <%= f.label :type_of_Payment %><br />
-    <%= f.text_field :type_of_Payment %>
+    <%= f.label :type_of_payment %><br />
+    <%= select_tag(:type_of_payment, options_for_select(["efectivo","transferencia","deposito"])) %>
   </div>
   <div class="field">
-    <%= f.label :operation_Number %><br />
-    <%= f.text_field :operation_Number %>
+    <%= f.label :operation_number %><br />
+    <%= f.text_field :operation_number %>
   </div>
   <div class="field">
-    <%= f.label :deposit_Date %><br />
-    <%= f.date_select :deposit_Date %>
+    <%= f.label :deposit_date %><br />
+    <%= f.date_select :deposit_date %>
   </div>
   <div class="field">
-    <%= f.label :invoice_Number %><br />
-    <%= f.text_field :invoice_Number %>
+    <%= f.label :invoice_number %><br />
+    <%= f.text_field :invoice_number %>
   </div>
   <div class="actions">
     <%= f.submit %>

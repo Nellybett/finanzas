@@ -73,6 +73,7 @@ class EgressesController < ApplicationController
     u=User.find(session[:user])  
     if (u.role=='Admin' || u.role=='Member')
     @egress = Egress.new(params[:egress])
+    @egress.type_of_payment=(params[:type_of_payment])
     @egress.user=u
     respond_to do |format|
       if @egress.save

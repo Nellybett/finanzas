@@ -12,22 +12,22 @@
 
 <p>
   <b>Type of payment:</b>
-  <%= @income.type_of_Payment %>
+  <%= @income.type_of_payment %>
 </p>
 
 <p>
   <b>Operation number:</b>
-  <%= @income.operation_Number %>
+  <%= @income.operation_number %>
 </p>
 
 <p>
   <b>Deposit date:</b>
-  <%= @income.deposit_Date %>
+  <%= @income.deposit_date %>
 </p>
 
 <p>
   <b>Invoice number:</b>
-  <%= @income.invoice_Number %>
+  <%= @income.invoice_number %>
 </p>
 
 
@@ -44,15 +44,17 @@
   </thead>
 
  <tbody>
-<% epin=(IncomeEp.where("income_id = ?",@income.id)).first %>
+
+<% epin=(IncomeEp.where(:income_id =>@income.id)).first %>
+
 <% if (epin.nil?) == false %>
 
-<% ep=(Ep.where("ep_id = ?",epin.ep.ep_Id)).first %>
+<% ep=(Ep.where(:id => epin.ep.id)).first %>
   <tr class="odd">
     <td> EP </td>
-    <td><%= ep.ep_Id %></td>
-    <td><%= ep.ep_Name %></td>
-    <td><%= ep.ep_Lastname %></td>
+    <td><%= ep.identification %></td>
+    <td><%= ep.ep_name %></td>
+    <td><%= ep.ep_lastname %></td>
     <td><%= ep.program %></td>
     <td><%= link_to 'Destroy', epin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
@@ -61,29 +63,34 @@
 
 
 
+
 <% tnin=(IncomeTn.where("income_id = ?",@income.id)).first %>
 
 <% if (tnin.nil?) == false %>
-<% tn=(Tn.where("tn_id = ?",tnin.tn.tn_Id)).first %>
+
+<% tn=(Tn.where(:id => tnin.tn.id)).first %>
+
   <tr class="odd">
     <td> TN </td>
-    <td><%= tn.tn_Id %></td>
-    <td><%= tn.tn_Taker %></td>
-    <td><%= tn.tn_Name %></td>
+    <td><%= tn.identification %></td>
+    <td><%= tn.tn_taker %></td>
+    <td><%= tn.tn_name %></td>
     <td><%= tn.program %></td>
     <td><%= link_to 'Destroy', tnin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
+
 <% end %>
+
 
 
 <% evin=(IncomeEvent.where("income_id = ?",@income.id)).first %>
 
 <% if (evin.nil?) == false %>
-<% ev=(Event.where("id = ?",evin.event.id)).first %>
+<% ev=(Event.where("id = ?",evin.event.event_id)).first %>
   <tr class="odd">
     <td> EVENTO </td>
     <td><%= ev.name %></td>
-    <td><%= ev.event_Date %></td>
+    <td><%= ev.event_date %></td>
     <td><%= ev.profit %></td>
     <td><%= ev.expense %></td>
     <td><%= link_to 'Destroy', evin, method: :delete, data: { confirm: 'Are you sure?' } %></td>

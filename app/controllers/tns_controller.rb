@@ -69,6 +69,8 @@ class TnsController < ApplicationController
     if (u.role=='Admin' || u.role=='Member')
    
     @tn = Tn.new(params[:tn])
+    @tn.program=(params[:program])
+    @tn.identification=(params[:identification])
     @tn.user=u
     respond_to do |format|
       if @tn.save

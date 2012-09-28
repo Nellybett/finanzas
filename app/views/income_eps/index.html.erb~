@@ -15,7 +15,7 @@
 
 <% @income_eps.each do |income_ep| %>
   <tr class="odd">
-    <td><%= income_ep.income.reason %></td>
+    <td><%= income_ep.income %></td>
     <td><%= income_ep.ep.ep_Name %></td>
     <td><%= link_to 'Show', income_ep %></td>
     <td><%= link_to 'Edit', edit_income_ep_path(income_ep) %></td>

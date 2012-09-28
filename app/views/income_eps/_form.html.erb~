@@ -11,12 +11,12 @@
     </div>
   <% end %>
   <div class="field">
-    <%= hidden_field_tag(:income_id, @income) %>
+    <%= hidden_field_tag(:income, @income.id)%>
   </div>
 
   <div class="field">
     <%= f.label :ep %><br />
-    <%= select_tag(:ep_Id, options_from_collection_for_select(Ep.all,:ep_Id, :ep_Name)) %>
+    <%= select_tag(:ep, options_from_collection_for_select(Ep.all,:ep, :ep_name)) %>
   </div>
   <br/>
   <br/>

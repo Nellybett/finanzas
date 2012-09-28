@@ -20,12 +20,12 @@
                                 <%= link_to 'Usuarios', users_url %>
                                 <% end %>
 
-				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].last_Name!='F&L')) %>
+				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].area!='F&L')) %>
 			        <h3><a href="#"> Ingresos </a></h3>
 				<div>
                                 <%end%>				
 				
-                                <% if session[:user].last_Name=='F&L' && (session[:user].role=='Member') %>
+                                <% if session[:user].area=='F&L' && (session[:user].role=='Member') %>
 			        <h3><a href="#"> Ingresos </a></h3>
 				<div>
   				<%= link_to 'Ingresos', '/incomes' %> <br/>				
@@ -41,12 +41,12 @@
 				<%= link_to 'Egresos', '/egresses' %>
                                 <%end%>
 
-				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].last_Name!='F&L')) %>
+				<% if (session[:user].role=='Nuevo' || (session[:user].role=='Member' && session[:user].area!='F&L')) %>
 			        <h3><a href="#"> Egresos </a></h3>
                                 <div>
 				<%end%>
 				
-				<% if session[:user].last_Name=='F&L' && (session[:user].role=='Member') %>
+				<% if session[:user].area=='F&L' && (session[:user].role=='Member') %>
 			        <h3><a href="#"> Egresos </a></h3>
 				<div>
   				<%= link_to 'Egresos', '/egresses' %>				

@@ -11,9 +11,9 @@ class EgressEventsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @egress_events }
     end
-  else
+    else
       redirect_to "/home/principal"
-   end
+    end
   end
 
   # GET /egress_events/1
@@ -28,7 +28,7 @@ class EgressEventsController < ApplicationController
       format.html # show.html.erb
       format.json { render json: @egress_event }
     end
-  else
+   else
       redirect_to "/home/principal"
    end
   end
@@ -46,6 +46,9 @@ class EgressEventsController < ApplicationController
       format.json { render json: @egress_event }
       format.json { render json: @egress}
     end
+    else
+      redirect_to "/home/principal"
+   end
   end
 
   # GET /egress_events/1/edit
@@ -123,4 +126,5 @@ class EgressEventsController < ApplicationController
       redirect_to "/home/principal"
    end
   end
+
 end

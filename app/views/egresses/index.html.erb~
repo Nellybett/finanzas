@@ -41,4 +41,4 @@
 <br/>
 
 <%= link_to 'New Egress', new_egress_path %> | 
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', "/home/index" %>

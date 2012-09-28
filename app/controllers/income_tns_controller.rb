@@ -72,9 +72,10 @@ class IncomeTnsController < ApplicationController
     if (u.role=='Admin' || u.role=='Member')
     
     @income_tn = IncomeTn.new(params[:income_tn])
+
     i=Income.find(params[:income])
-    @income_tn.tn = (Tn.where(:tn_Id => params[:tn_Id])).first
-    @income_tn.income=i
+    @income_tn.tn_id = ((Tn.where(:id => params[:tn])).first).id
+    @income_tn.income_id=i.id
 
     respond_to do |format|
       if @income_tn.save

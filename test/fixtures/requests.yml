@@ -3,23 +3,23 @@
 one:
   reason: MyString
   amount: MyString
-  request_Date: 2012-09-25
+  request_date: 2012-09-28
   name: MyString
   identification: MyString
-  account_Type: MyString
-  acount_Number: MyString
+  account_type: MyString
+  account_number: MyString
   bank: MyString
-  type: 
+  para: MyString
   user: 
 
 two:
   reason: MyString
   amount: MyString
-  request_Date: 2012-09-25
+  request_date: 2012-09-28
   name: MyString
   identification: MyString
-  account_Type: MyString
-  acount_Number: MyString
+  account_type: MyString
+  account_number: MyString
   bank: MyString
-  type: 
+  para: MyString
   user: 

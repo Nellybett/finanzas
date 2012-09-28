@@ -1,9 +1,5 @@
-PlataformaFinanciera::Application.routes.draw do
+Finanzasylegal::Application.routes.draw do
 
-
-
-
-  resources :requests
 
   root :to => 'Home#principal'
 
@@ -24,7 +20,7 @@ PlataformaFinanciera::Application.routes.draw do
   get "users/change_password"
   get "users/signup"
   resources :income_tns
-
+  resources :requests
   resources :income_eps
   resources :egress_events
 

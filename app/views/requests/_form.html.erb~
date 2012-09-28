@@ -20,8 +20,8 @@
     <%= f.text_field :amount %>
   </div>
   <div class="field">
-    <%= f.label :request_Date %><br />
-    <%= f.date_select :request_Date %>
+    <%= f.label :request_date %><br />
+    <%= f.date_select :request_date %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
@@ -32,12 +32,12 @@
     <%= f.text_field :identification %>
   </div>
   <div class="field">
-    <%= f.label :account_Type %><br />
-    <%= f.text_field :account_Type %>
+    <%= f.label :account_type %><br />
+    <%= f.text_field :account_type %>
   </div>
   <div class="field">
-    <%= f.label :acount_Number %><br />
-    <%= f.text_field :acount_Number %>
+    <%= f.label :acount_number %><br />
+    <%= f.text_field :acount_number %>
   </div>
   <div class="field">
     <%= f.label :bank %><br />
@@ -46,15 +46,16 @@
   <div class="field">
     <%= f.label :para %><br />
     <%= select_tag(:para, options_from_collection_for_select(User.select(:committee).uniq,:committee,:committee)) %>
+  </div>
   <br/>
   <br/>
-  <% if session[:user].last_Name=='F&L' %>
+  <% if session[:user].area=='F&L' %>
  <div class="field">
     <%= f.label :status %><br />
     <%= f.text_field :status %>
   </div>
   <% end %>
-  </div>
+  
 
   <div class="actions">
     <%= f.submit %>

@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  tn_Id: MyString
-  tn_Taker: MyString
-  tn_Name: MyString
+  identification: MyString
+  tn_taker: MyString
+  tn_name: MyString
   program: MyString
-  tn_Manager_Name: MyString
-  tn_Manager_Email: MyString
+  tn_manager_name: MyString
+  tn_manager_email: MyString
   user: 
 
 two:
-  tn_Id: MyString
-  tn_Taker: MyString
-  tn_Name: MyString
+  identification: MyString
+  tn_taker: MyString
+  tn_name: MyString
   program: MyString
-  tn_Manager_Name: MyString
-  tn_Manager_Email: MyString
+  tn_manager_name: MyString
+  tn_manager_email: MyString
   user: 

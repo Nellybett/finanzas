@@ -10,6 +10,8 @@
 <% if session[:user].role=='Admin' || session[:user].role=='Member' %>
 <%= link_to 'Solicitudes', requests_url %>
 <% end %>
+<br/>
+<br/>
 		<div id="accordion">
 			<div>
                                 <% if session[:user].role=='Admin' %>  

@@ -45,4 +45,4 @@
 <br />
 
 <%= link_to 'New Income', new_income_path %> | 
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', "/home/index" %>

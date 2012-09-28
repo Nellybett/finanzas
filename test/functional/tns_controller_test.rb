@@ -18,7 +18,7 @@ class TnsControllerTest < ActionController::TestCase
 
   test "should create tn" do
     assert_difference('Tn.count') do
-      post :create, tn: { program: @tn.program, tn_Id: @tn.tn_Id, tn_Manager_Email: @tn.tn_Manager_Email, tn_Manager_Name: @tn.tn_Manager_Name, tn_Name: @tn.tn_Name, tn_Taker: @tn.tn_Taker }
+      post :create, tn: { identification: @tn.identification, program: @tn.program, tn_manager_email: @tn.tn_manager_email, tn_manager_name: @tn.tn_manager_name, tn_name: @tn.tn_name, tn_taker: @tn.tn_taker }
     end
 
     assert_redirected_to tn_path(assigns(:tn))
@@ -35,7 +35,7 @@ class TnsControllerTest < ActionController::TestCase
   end
 
   test "should update tn" do
-    put :update, id: @tn, tn: { program: @tn.program, tn_Id: @tn.tn_Id, tn_Manager_Email: @tn.tn_Manager_Email, tn_Manager_Name: @tn.tn_Manager_Name, tn_Name: @tn.tn_Name, tn_Taker: @tn.tn_Taker }
+    put :update, id: @tn, tn: { identification: @tn.identification, program: @tn.program, tn_manager_email: @tn.tn_manager_email, tn_manager_name: @tn.tn_manager_name, tn_name: @tn.tn_name, tn_taker: @tn.tn_taker }
     assert_redirected_to tn_path(assigns(:tn))
   end
 

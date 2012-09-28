@@ -75,6 +75,7 @@ class RequestsController < ApplicationController
     if (u.role=='Admin' || u.role=='Member')
 
     @request = Request.new(params[:request])
+    @request.para=params[:para]
     @request.user=u
     respond_to do |format|
       if @request.save

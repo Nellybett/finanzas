@@ -1,21 +1,39 @@
-FINANZASLegal::Application.routes.draw do
+Finanzasylegal::Application.routes.draw do
+
+
+
+
+  resources :requests
+
+  root :to => 'Home#principal'
 
   get "home/index"
-
-  root :to => 'Home#index'
-
   get "users/login"
   match "/users/change_passwords" => "Users#change_password"
   match "/users/forgot_passwords" => "Users#forgot_password"
   match "/users/logins" => "Users#login"
+  get "home/principal"
+  get "home/index" => "Home#index"
+  match "/income_eps/new.:id/" => "Income_eps#new"
+  match "/income_events/new.:id/" => "Income_events#new"
+  match "/income_tns/new.:id/" => "Income_tns#new"
+  match "/egress_events/new.:id/" => "Egress_events#new"
   match "/users/logout" => "Users#logout"
   match "/users/signups" => "Users#signup"
-  match "/ep_audits/creates" => "Ep_audits#create"
   get "users/forgot_password"
   get "users/change_password"
   get "users/signup"
+  resources :income_tns
+
+  resources :income_eps
+  resources :egress_events
+
+  resources :income_events
+
+  resources :egresses
 
   resources :incomes
+  resources :events
 
   resources :eps
 

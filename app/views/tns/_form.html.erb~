@@ -12,28 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :tn_Id %><br />
-    <%= f.text_field :tn_Id %>
+    <%= f.label :tn_id %><br />
+    <%= f.text_field :tn_id %>
   </div>
   <div class="field">
-    <%= f.label :tn_Taker %><br />
-    <%= f.text_field :tn_Taker %>
+    <%= f.label :tn_taker %><br />
+    <%= f.text_field :tn_taker %>
   </div>
   <div class="field">
-    <%= f.label :tn_Name %><br />
-    <%= f.text_field :tn_Name %>
+    <%= f.label :tn_name %><br />
+    <%= f.text_field :tn_name %>
   </div>
   <div class="field">
     <%= f.label :program %><br />
-    <%= f.text_field :program %>
+    <%= select_tag(:program, options_for_select([["GIP",'GIP'],["GCDP",'GCDP']])) %>
   </div>
   <div class="field">
-    <%= f.label :tn_Manager_Name %><br />
-    <%= f.text_field :tn_Manager_Name %>
+    <%= f.label :tn_manager_name %><br />
+    <%= f.text_field :tn_manager_name %>
   </div>
   <div class="field">
-    <%= f.label :tn_Manager_Email %><br />
-    <%= f.text_field :tn_Manager_Email %>
+    <%= f.label :tn_manager_email %><br />
+    <%= f.text_field :tn_manager_email %>
   </div>
  
   <div class="actions">

@@ -69,6 +69,7 @@ class IncomesController < ApplicationController
     u=User.find(session[:user])  
     if (u.role=='Admin' || u.role=='Member')
     @income = Income.new(params[:income])
+    @income.type_of_payment=(params[:type_of_payment])
     @income.user=u
     respond_to do |format|
       if @income.save

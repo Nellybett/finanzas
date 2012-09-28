@@ -10,42 +10,49 @@
       </ul>
     </div>
   <% end %>
-<% if session[:user].role=='Admin'%>	
+	
   <div class="field">
     <%= f.label :username %><br />
     <%= f.text_field :username %>
   </div>
-<% end %>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
+
   <div class="field">
-    <label for="user_first_Name"> Name</label><br/>
-    <%= f.text_field :first_Name %>
+   <%= f.label :name %><br />
+    <%= f.text_field :name %>
   </div>
+
   <div class="field">
-    <label for="user_last_Name"> Area Funcional </label><br/>
-    <%= select_tag(:last_Name, options_for_select([["F&L",'F&L'],["ICX",'ICX'],["OGX",'OGX'],["COMM",'COMM'],["OS",'OS'],["TM",'TM'],["ER",'ER']])) %>
+    <%= f.label :area %><br />
+    <%= select_tag(:area, options_for_select([["F&L",'F&L'],["ICX",'ICX'],["OGX",'OGX'],["COMM",'COMM'],["OS",'OS'],["TM",'TM'],["ER",'ER']])) %>
   </div>
+
   <div class="field">
     <%= f.label :committee %><br />
     <%= select_tag(:committee, options_for_select([["USB",'USB'],["UCV",'UCV'],["UCAB",'UCAB'],["UNIMET",'UNIMET'],["UNITEC",'UNITEC'],["UC",'UC'],["MERIDA",'MERIDA'],["MARACAIBO",'MARACAIBO'],["BARQUISIMETO",'BARQUISIMETO'],["GUAYANA",'GUAYANA']])) %>
   </div>
+
   <div class="field">
     <%= f.label :password %><br />
     <%= f.text_field :password %>
   </div>
+
   <div class="field">
     <%= f.label :phone %><br />
     <%= f.number_field :phone %>
   </div>
-<% if session[:user].role=='Admin'%>	
+
+	
   <div class="field">
     <%= f.label :role %><br />
     <%= select_tag(:role, options_for_select([["Administrador",'Admin'],["Miembro",'Member'],["Nuevo",'Nuevo']])) %>
   </div>
-<% end %>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,11 +1,11 @@
 <%= form_tag 'signups', :multipart => true do %>
 <div class="title"> Signup </div>
 
-<label for="user_first_name">First Name</label><br/>
-<%= text_field "user", "first_Name", :size => 20 %><br/>
+<label for="user_name">First Name</label><br/>
+<%= text_field "user", "name", :size => 20 %><br/>
 
-<label for="user_last_name">Area Funcional</label><br/>
-<%= select_tag(:last_Name, options_for_select([["F&L",'F&L'],["ICX",'ICX'],["OGX",'OGX'],["COMM",'COMM'],["OS",'OS'],["TM",'TM'],["ER",'ER']])) %>
+<label for="user_area">Area Funcional</label><br/>
+<%= select_tag(:area, options_for_select([["F&L",'F&L'],["ICX",'ICX'],["OGX",'OGX'],["COMM",'COMM'],["OS",'OS'],["TM",'TM'],["ER",'ER']])) %>
 <br/>
 
 <label for="user_login">Username</label><br/>

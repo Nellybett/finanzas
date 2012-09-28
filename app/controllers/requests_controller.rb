@@ -8,10 +8,10 @@ class RequestsController < ApplicationController
     if u.role == 'Admin'
     @requests=Request.where(:para => 'MC')
     end
-    if u.role == 'Member' && u.last_Name=='F&L'
+    if u.role == 'Member' && u.area=='F&L'
     @requests = Request.where("para =? OR user_id = ?", u.committee,u.id )
     end
-    if u.role == 'Member' && u.last_Name!='F&L'
+    if u.role == 'Member' && u.area!='F&L'
     @requests = Request.where(:user_id => u.id)
     end
     

@@ -3,8 +3,8 @@
 one:
   username: MyString
   email: MyString
-  first_Name: MyString
-  last_Name: MyString
+  name: MyString
+  area: MyString
   committee: MyString
   password: MyString
   phone: 1
@@ -13,8 +13,8 @@ one:
 two:
   username: MyString
   email: MyString
-  first_Name: MyString
-  last_Name: MyString
+  name: MyString
+  area: MyString
   committee: MyString
   password: MyString
   phone: 1

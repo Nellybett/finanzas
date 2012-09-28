@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120927023616) do
+ActiveRecord::Schema.define(:version => 20120928151146) do
 
   create_table "egress_events", :force => true do |t|
     t.integer  "egress_id"
@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   add_index "egress_events", ["event_id"], :name => "index_egress_events_on_event_id"
 
   create_table "egresses", :force => true do |t|
-    t.integer  "user_id"
     t.string   "reason"
     t.string   "amount"
-    t.string   "type_of_Payment"
-    t.string   "operation_Number"
+    t.string   "type_of_payment"
+    t.string   "operation_number"
     t.date     "date"
-    t.string   "invoice_Number"
+    t.string   "invoice_number"
+    t.integer  "user_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -38,12 +38,12 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   add_index "egresses", ["user_id"], :name => "index_egresses_on_user_id"
 
   create_table "eps", :force => true do |t|
-    t.string   "ep_Id"
-    t.string   "ep_Name"
-    t.string   "ep_Lastname"
+    t.string   "identification"
+    t.string   "ep_name"
+    t.string   "ep_lastname"
     t.string   "program"
-    t.string   "ep_Manager_Name"
-    t.string   "ep_Manager_Email"
+    t.string   "ep_manager_name"
+    t.string   "ep_manager_email"
     t.integer  "user_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
@@ -53,10 +53,10 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
-    t.date     "event_Date"
-    t.text     "oc"
-    t.text     "description"
-    t.text     "recomendations"
+    t.date     "event_date"
+    t.string   "oc"
+    t.string   "description"
+    t.string   "recomendations"
     t.string   "profit"
     t.string   "expense"
     t.integer  "user_id"
@@ -97,13 +97,13 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   add_index "income_tns", ["tn_id"], :name => "index_income_tns_on_tn_id"
 
   create_table "incomes", :force => true do |t|
-    t.integer  "user_id"
     t.string   "reason"
     t.string   "amount"
-    t.string   "type_of_Payment"
-    t.string   "operation_Number"
-    t.date     "deposit_Date"
-    t.string   "invoice_Number"
+    t.string   "type_of_payment"
+    t.string   "operation_number"
+    t.date     "deposit_date"
+    t.string   "invoice_number"
+    t.integer  "user_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -113,11 +113,11 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   create_table "requests", :force => true do |t|
     t.string   "reason"
     t.string   "amount"
-    t.date     "request_Date"
+    t.date     "request_date"
     t.string   "name"
     t.string   "identification"
-    t.string   "account_Type"
-    t.string   "acount_Number"
+    t.string   "account_type"
+    t.string   "account_number"
     t.string   "bank"
     t.string   "para"
     t.integer  "user_id"
@@ -129,12 +129,12 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   add_index "requests", ["user_id"], :name => "index_requests_on_user_id"
 
   create_table "tns", :force => true do |t|
-    t.string   "tn_Id"
-    t.string   "tn_Taker"
-    t.string   "tn_Name"
+    t.string   "identification"
+    t.string   "tn_taker"
+    t.string   "tn_name"
     t.string   "program"
-    t.string   "tn_Manager_Name"
-    t.string   "tn_Manager_Email"
+    t.string   "tn_manager_name"
+    t.string   "tn_manager_email"
     t.integer  "user_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
@@ -145,8 +145,8 @@ ActiveRecord::Schema.define(:version => 20120927023616) do
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "email"
-    t.string   "first_Name"
-    t.string   "last_Name"
+    t.string   "name"
+    t.string   "area"
     t.string   "committee"
     t.string   "password"
     t.integer  "phone"

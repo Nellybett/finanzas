@@ -22,7 +22,8 @@
 
 <label for="user_last_name">Committee</label><br/>
  <%= select_tag(:committee, options_for_select([["USB",'USB'],["UCV",'UCV'],["UCAB",'UCAB'],["UNIMET",'UNIMET'],["UNITEC",'UNITEC'],["UC",'UC'],["MERIDA",'MERIDA'],["MARACAIBO",'MARACAIBO'],["BARQUISIMETO",'BARQUISIMETO'],["GUAYANA",'GUAYANA'],["MC",'MC']])) %>
-
+<br/>
+<br/>
 <%= submit_tag "Signup" %>
 <%= link_to 'Back', '/users/login' %>
 <% end %>

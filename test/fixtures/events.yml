@@ -2,20 +2,20 @@
 
 one:
   name: MyString
-  event_Date: 2012-09-25
-  oc: MyText
-  description: MyText
-  recomendations: MyText
+  event_date: 2012-09-28
+  oc: MyString
+  description: MyString
+  recomendations: MyString
   profit: MyString
   expense: MyString
   user: 
 
 two:
   name: MyString
-  event_Date: 2012-09-25
-  oc: MyText
-  description: MyText
-  recomendations: MyText
+  event_date: 2012-09-28
+  oc: MyString
+  description: MyString
+  recomendations: MyString
   profit: MyString
   expense: MyString
   user: 

@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :type_of_Payment %><br />
-    <%= select_tag(:type_of_Payment, options_for_select([["Efectivo",efectivo],["Transferencia",transferencia],["Deposito",deposito]])) %>
+    <%= select_tag(:type_of_Payment, options_for_select([["Efectivo",'efectivo'],["Transferencia",'transferencia'],["Deposito",'deposito']])) %>
     
   </div>
   <div class="field">

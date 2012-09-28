@@ -18,7 +18,7 @@ class EgressesControllerTest < ActionController::TestCase
 
   test "should create egress" do
     assert_difference('Egress.count') do
-      post :create, egress: { amount: @egress.amount, date: @egress.date, invoice_Number: @egress.invoice_Number, operation_Number: @egress.operation_Number, reason: @egress.reason, type_of_Payment: @egress.type_of_Payment }
+      post :create, egress: { amount: @egress.amount, date: @egress.date, invoice_number: @egress.invoice_number, operation_number: @egress.operation_number, reason: @egress.reason, type_of_payment: @egress.type_of_payment }
     end
 
     assert_redirected_to egress_path(assigns(:egress))
@@ -35,7 +35,7 @@ class EgressesControllerTest < ActionController::TestCase
   end
 
   test "should update egress" do
-    put :update, id: @egress, egress: { amount: @egress.amount, date: @egress.date, invoice_Number: @egress.invoice_Number, operation_Number: @egress.operation_Number, reason: @egress.reason, type_of_Payment: @egress.type_of_Payment }
+    put :update, id: @egress, egress: { amount: @egress.amount, date: @egress.date, invoice_number: @egress.invoice_number, operation_number: @egress.operation_number, reason: @egress.reason, type_of_payment: @egress.type_of_payment }
     assert_redirected_to egress_path(assigns(:egress))
   end
 

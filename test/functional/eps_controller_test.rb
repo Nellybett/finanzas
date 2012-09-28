@@ -18,7 +18,7 @@ class EpsControllerTest < ActionController::TestCase
 
   test "should create ep" do
     assert_difference('Ep.count') do
-      post :create, ep: { ep_Id: @ep.ep_Id, ep_Lastname: @ep.ep_Lastname, ep_Manager_Email: @ep.ep_Manager_Email, ep_Manager_Name: @ep.ep_Manager_Name, ep_Name: @ep.ep_Name, program: @ep.program }
+      post :create, ep: { ep_lastname: @ep.ep_lastname, ep_manager_email: @ep.ep_manager_email, ep_manager_name: @ep.ep_manager_name, ep_name: @ep.ep_name, identification: @ep.identification, program: @ep.program }
     end
 
     assert_redirected_to ep_path(assigns(:ep))
@@ -35,7 +35,7 @@ class EpsControllerTest < ActionController::TestCase
   end
 
   test "should update ep" do
-    put :update, id: @ep, ep: { ep_Id: @ep.ep_Id, ep_Lastname: @ep.ep_Lastname, ep_Manager_Email: @ep.ep_Manager_Email, ep_Manager_Name: @ep.ep_Manager_Name, ep_Name: @ep.ep_Name, program: @ep.program }
+    put :update, id: @ep, ep: { ep_lastname: @ep.ep_lastname, ep_manager_email: @ep.ep_manager_email, ep_manager_name: @ep.ep_manager_name, ep_name: @ep.ep_name, identification: @ep.identification, program: @ep.program }
     assert_redirected_to ep_path(assigns(:ep))
   end
 

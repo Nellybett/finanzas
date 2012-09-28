@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  ep_Id: MyString
-  ep_Name: MyString
-  ep_Lastname: MyString
+  identification: MyString
+  ep_name: MyString
+  ep_lastname: MyString
   program: MyString
-  ep_Manager_Name: MyString
-  ep_Manager_Email: MyString
+  ep_manager_name: MyString
+  ep_manager_email: MyString
   user: 
 
 two:
-  ep_Id: MyString
-  ep_Name: MyString
-  ep_Lastname: MyString
+  identification: MyString
+  ep_name: MyString
+  ep_lastname: MyString
   program: MyString
-  ep_Manager_Name: MyString
-  ep_Manager_Email: MyString
+  ep_manager_name: MyString
+  ep_manager_email: MyString
   user: 

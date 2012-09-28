@@ -69,10 +69,10 @@ class IncomeEpsController < ApplicationController
     u=User.find(session[:user])  
     if (u.role=='Admin' || u.role=='Member')
     
-     @income_ep = IncomeEp.new(params[:income_ep])
+    @income_ep = IncomeEp.new(params[:income_ep])
     i=Income.find(params[:income])
-    @income_ep.ep = (Ep.where(:ep_Id => params[:ep_Id])).first
-    @income_ep.income=i
+    @income_ep.ep_id = ((Ep.where(:id => params[:ep])).first).id
+    @income_ep.income_id=i.id
     respond_to do |format|
       if @income_ep.save
         format.html { redirect_to @income_ep, notice: 'Income ep was successfully created.' }

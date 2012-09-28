@@ -33,8 +33,6 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
  # GET /users/new
   # GET /users/new.json
   def new
-    u=User.find(session[:user])
-    if u.role=='Admin'
     
     @user = User.new
        
@@ -42,10 +40,7 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
       format.html # new.html.erb
       format.json { render json: @user }
     end
-    else
-      redirect_to "/home/principal"
-    end
-    
+   
   end
 
   # GET /users/1/edit
@@ -56,11 +51,11 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
 # POST /users
   # POST /users.json
   def create
-    u=User.find(session[:user])
-    if u.role=='Admin'
     
     @user = User.new(params[:user])
-    @user.role='Member'
+    @user.committee=(params[:committee])
+    @user.area=(params[:area])
+    @user.role=(params[:role])
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
@@ -71,9 +66,6 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
       end
     end
     
-    else
-      redirect_to "/home/principal"
-    end
   end
 
 
@@ -111,7 +103,7 @@ def signup
       if @user.save
         session[:user] = User.authenticate(@user.username, @user.password)
         flash[:message] = "Signup successful"
-        redirect_to root_url
+        redirect_to "/home/index"
       else
         flash[:warning] = "Signup unsuccessful"
       end
@@ -124,7 +116,7 @@ def signup
     if request.post?
       if session[:user] = User.authenticate(params[:user][:username], params[:user][:password])
         flash[:message]  = "Login successful"
-        redirect_to root_url
+        redirect_to "/home/index"
       else
         flash[:warning] = "Login unsuccessful"
       end

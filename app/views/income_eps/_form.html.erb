@@ -16,7 +16,7 @@
 
   <div class="field">
     <%= f.label :ep %><br />
-    <%= select_tag(:ep_Id, options_from_collection_for_select(Ep.all,:ep_Id, :ep_Name)) %>
+    <%= select_tag(:ep, options_from_collection_for_select(Ep.all,:id, :ep_name)) %>
   </div>
   <br/>
   <br/>

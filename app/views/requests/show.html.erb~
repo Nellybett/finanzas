@@ -41,7 +41,7 @@
 </p>
 
 <p>
-  <b>To:</b>
+  <b>Para:</b>
   <%= @request.para %>
 </p>
 
