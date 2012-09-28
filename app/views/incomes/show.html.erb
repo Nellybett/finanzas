@@ -86,7 +86,7 @@
 <% evin=(IncomeEvent.where("income_id = ?",@income.id)).first %>
 
 <% if (evin.nil?) == false %>
-<% ev=(Event.where("id = ?",evin.event.event_id)).first %>
+<% ev=(Event.where(:id => evin.event.id)).first %>
   <tr class="odd">
     <td> EVENTO </td>
     <td><%= ev.name %></td>

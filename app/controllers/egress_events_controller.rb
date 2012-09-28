@@ -70,8 +70,9 @@ class EgressEventsController < ApplicationController
     
     @egress_event = EgressEvent.new(params[:egress_event])
     e=Egress.find(params[:egress])
-    @egress_event.event = (Event.where(:id => params[:event_id])).first
-    @egress_event.egress=e
+    @egress_event.event_id = ((Event.where(:id => params[:event])).first).id
+    @egress_event.egress_id=e.id
+
 
     respond_to do |format|
       if @egress_event.save

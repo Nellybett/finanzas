@@ -65,13 +65,15 @@ else
   # POST /income_events
   # POST /income_events.json
   def create
+
     u=User.find(session[:user])  
     if (u.role=='Admin' || u.role=='Member')
     
     @income_event = IncomeEvent.new(params[:income_event])
     i=Income.find(params[:income])
-    @income_event.event = (Event.where(:id => params[:event_id])).first
-    @income_event.income=i
+    @income_event.event_id = ((Event.where(:id => params[:event])).first).id
+    @income_event.income_id=i.id
+
     
     respond_to do |format|
       if @income_event.save

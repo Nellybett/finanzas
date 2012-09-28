@@ -64,13 +64,29 @@
 
 
 
+<% tnin=(IncomeTn.where("income_id = ?",@income.id)).first %>
+
+<% if (tnin.nil?) == false %>
+
+<% tn=(Tn.where(:id => tnin.tn.id)).first %>
+
+  <tr class="odd">
+    <td> TN </td>
+    <td><%= tn.identification %></td>
+    <td><%= tn.tn_taker %></td>
+    <td><%= tn.tn_name %></td>
+    <td><%= tn.program %></td>
+    <td><%= link_to 'Destroy', tnin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+<% end %>
 
 
 
 <% evin=(IncomeEvent.where("income_id = ?",@income.id)).first %>
 
 <% if (evin.nil?) == false %>
-<% ev=(Event.where("id = ?",evin.event.event_id)).first %>
+<% ev=(Event.where(:id => evin.event.event.id)).first %>
   <tr class="odd">
     <td> EVENTO </td>
     <td><%= ev.name %></td>

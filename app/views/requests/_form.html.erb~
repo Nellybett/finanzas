@@ -33,11 +33,11 @@
   </div>
   <div class="field">
     <%= f.label :account_type %><br />
-    <%= f.text_field :account_type %>
+     <%= select_tag(:account_type, options_for_select([["Corriente",'corriente'],["Ahorro",'ahorro']])) %>
   </div>
   <div class="field">
-    <%= f.label :acount_number %><br />
-    <%= f.text_field :acount_number %>
+    <%= f.label :account_number %><br />
+    <%= f.text_field :account_number %>
   </div>
   <div class="field">
     <%= f.label :bank %><br />

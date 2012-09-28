@@ -47,7 +47,7 @@
 <% eveg=(EgressEvent.where("egress_id = ?",@egress.id)).first %>
 
 <% if (eveg.nil?) == false %>
-<% ev=(Event.where("id = ?",eveg.event.id)).first %>
+<% ev=(Event.where(:id =>eveg.event.id)).first %>
   <tr class="odd">
     <td><%= ev.name %></td>
     <td><%= ev.event_date %></td>

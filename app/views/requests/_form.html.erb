@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :account_type %><br />
-    <%= f.text_field :account_type %>
+     <%= select_tag(:account_type, options_for_select([["Corriente",'corriente'],["Ahorro",'ahorro']])) %>
   </div>
   <div class="field">
     <%= f.label :account_number %><br />
@@ -52,7 +52,7 @@
   <% if session[:user].area=='F&L' %>
  <div class="field">
     <%= f.label :status %><br />
-    <%= f.text_field :status %>
+    <%= select_tag(:status, options_for_select([["Nueva",'nueva'],["En Proceso",'proceso'],["Aprobada",'aprobada']])) %>
   </div>
   <% end %>
   

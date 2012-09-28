@@ -17,7 +17,7 @@
 
   <div class="field">
     <%= f.label :event %><br />
-    <%= select_tag(:event_id, options_from_collection_for_select(Event.all,:id, :name)) %>
+    <%= select_tag(:event, options_from_collection_for_select(Event.all,:id, :name)) %>
   </div>
   <br/>
   <br/>

@@ -12,12 +12,12 @@
 
 <p>
   <b>Type of payment:</b>
-  <%= @egress.type_of_Payment %>
+  <%= @egress.type_of_payment %>
 </p>
 
 <p>
   <b>Operation number:</b>
-  <%= @egress.operation_Number %>
+  <%= @egress.operation_number %>
 </p>
 
 <p>
@@ -27,7 +27,7 @@
 
 <p>
   <b>Invoice number:</b>
-  <%= @egress.invoice_Number %>
+  <%= @egress.invoice_number %>
 </p>
 
 
@@ -50,7 +50,7 @@
 <% ev=(Event.where("id = ?",eveg.event.id)).first %>
   <tr class="odd">
     <td><%= ev.name %></td>
-    <td><%= ev.event_Date %></td>
+    <td><%= ev.event_date %></td>
     <td><%= ev.profit %></td>
     <td><%= ev.expense %></td>
     <td><%= link_to 'Destroy', eveg, method: :delete, data: { confirm: 'Are you sure?' } %></td>

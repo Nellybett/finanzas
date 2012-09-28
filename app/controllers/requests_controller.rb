@@ -75,7 +75,9 @@ class RequestsController < ApplicationController
     if (u.role=='Admin' || u.role=='Member')
 
     @request = Request.new(params[:request])
-    @request.para=params[:para]
+    @request.para=(params[:para])
+    @request.account_type=(params[:account_type])
+    @request.status='nuevo'
     @request.user=u
     respond_to do |format|
       if @request.save
@@ -99,6 +101,8 @@ class RequestsController < ApplicationController
 
     @request = Request.find(params[:id])
     @request.para=params[:para]
+    @request.account_type=(params[:account_type])
+    @request.status=(params[:status])
     respond_to do |format|
       if @request.update_attributes(params[:request])
         format.html { redirect_to @request, notice: 'Request was successfully updated.' }
