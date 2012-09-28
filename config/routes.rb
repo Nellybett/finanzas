@@ -4,6 +4,9 @@ Finanzasylegal::Application.routes.draw do
   root :to => 'Home#principal'
 
   get "home/index"
+  get "home/contactos"
+  get "home/fundamentosleg"
+  get "home/fundamentosfinan"
   get "users/login"
   match "/users/change_passwords" => "Users#change_password"
   match "/users/forgot_passwords" => "Users#forgot_password"

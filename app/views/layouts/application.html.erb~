@@ -99,7 +99,7 @@
 				<% if (session[:user]).nil? %>
 				<a href="/users/login" class="boton">Plataforma - Login</a>
 				<% end %>
-				<a href="contacto.html" class="boton">Contacto</a>
+				<a href="/home/contactos" class="boton">Contacto</a>
 				<% if ((session[:user]).nil?)==false %>					
 				<a href="/users/logout" class="boton">Plataforma - Logout</a>				
 				<% end %>
