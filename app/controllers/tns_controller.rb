@@ -70,7 +70,6 @@ class TnsController < ApplicationController
    
     @tn = Tn.new(params[:tn])
     @tn.program=(params[:program])
-    @tn.identification=(params[:identification])
     @tn.user=u
     respond_to do |format|
       if @tn.save

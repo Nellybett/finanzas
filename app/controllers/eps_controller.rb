@@ -65,7 +65,6 @@ class EpsController < ApplicationController
     
     @ep = Ep.new(params[:ep])
     @ep.program=(params[:program])
-    @ep.identification=(params[:identification])
     @ep.user=u
     respond_to do |format|
       if @ep.save
