@@ -10,12 +10,12 @@
       </ul>
     </div>
   <% end %>
-<% if session[:user].role=='Admin'%>	
+	
   <div class="field">
     <%= f.label :username %><br />
     <%= f.text_field :username %>
   </div>
-<% end %>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
@@ -46,12 +46,12 @@
     <%= f.number_field :phone %>
   </div>
 
-<% if session[:user].role=='Admin'%>	
+	
   <div class="field">
     <%= f.label :role %><br />
     <%= select_tag(:role, options_for_select([["Administrador",'Admin'],["Miembro",'Member'],["Nuevo",'Nuevo']])) %>
   </div>
-<% end %>
+
 
   <div class="actions">
     <%= f.submit %>

@@ -41,12 +41,7 @@
     <%= f.text_field :password %>
   </div>
 
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.number_field :phone %>
-  </div>
-
-	
+  	
   <div class="field">
     <%= f.label :role %><br />
     <%= select_tag(:role, options_for_select([["Administrador",'Admin'],["Miembro",'Member'],["Nuevo",'Nuevo']])) %>

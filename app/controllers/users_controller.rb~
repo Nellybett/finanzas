@@ -71,6 +71,9 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
 
 def update
     @user = User.find(params[:id])
+    @user.committee=(params[:committee])
+    @user.area=(params[:area])
+    @user.role=(params[:role])
 
     respond_to do |format|
       if @user.update_attributes(params[:user])

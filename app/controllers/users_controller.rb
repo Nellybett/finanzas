@@ -54,6 +54,7 @@ before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
     
     @user = User.new(params[:user])
     @user.committee=(params[:committee])
+    @user.phone=0
     @user.area=(params[:area])
     @user.role=(params[:role])
     respond_to do |format|
@@ -73,6 +74,7 @@ def update
     @user = User.find(params[:id])
     @user.committee=(params[:committee])
     @user.area=(params[:area])
+    @user.phone=0
     @user.role=(params[:role])
 
     respond_to do |format|
@@ -102,6 +104,7 @@ def update
 def signup
     @user = User.new(params[:user])
     @user.committee=(params[:committee])
+    @user.phone=0
     @user.area=(params[:area])
     @user.role='Nuevo'
     if request.post?
