@@ -12,8 +12,10 @@
             <th scope="col">Para</th>
             <th scope="col">Status</th>
     	    <th scope="col"></th>
+	    <% if session[:user].role=='Admin' %>
     	    <th scope="col"></th>
     	    <th scope="col"></th>
+	    <% end %>
         </tr>
   </thead>
     
@@ -29,8 +31,10 @@
     <td><%= request.para %></td>
     <td><%= request.status %></td>
     <td><%= link_to 'Show', request %></td>
+    <% if session[:user].role=='Admin' %>
     <td><%= link_to 'Edit', edit_request_path(request) %></td>
     <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </tbody>

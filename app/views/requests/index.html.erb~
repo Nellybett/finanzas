@@ -12,8 +12,10 @@
             <th scope="col">Para</th>
             <th scope="col">Status</th>
     	    <th scope="col"></th>
+	    <% if session[:user].role=='Admin' %>
     	    <th scope="col"></th>
     	    <th scope="col"></th>
+	    <% end %>
         </tr>
   </thead>
     
@@ -25,7 +27,7 @@
     <td><%= request.request_date %></td>
     <td><%= request.user.username %></td>
     <td><%= request.user.committee %></td>
-    <td><%= request.user.last_name %></td>
+    <td><%= request.user.area %></td>
     <td><%= request.para %></td>
     <td><%= request.status %></td>
     <td><%= link_to 'Show', request %></td>

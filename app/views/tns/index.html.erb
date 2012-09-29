@@ -10,8 +10,10 @@
 	    <th scope="col">TN Manager Name</th>
             <th scope="col">TN Manager Email</th>
     	    <th scope="col"></th>
+	    <% if session[:user].role=='Admin' %>
     	    <th scope="col"></th>
     	    <th scope="col"></th>
+	    <% end %>
         </tr>
   </thead>
     
@@ -26,8 +28,10 @@
     <td><%= tn.tn_manager_name %></td>
     <td><%= tn.tn_manager_email %></td>
     <td><%= link_to 'Show', tn %></td>
+    <% if session[:user].role=='Admin' %>
     <td><%= link_to 'Edit', edit_tn_path(tn) %></td>
     <td><%= link_to 'Destroy', tn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </tbody>

@@ -19,15 +19,17 @@
 
 <% @eps.each do |ep| %>
   <tr class="odd">
-    <td><%= ep.ep_id %></td>
+    <td><%= ep.identification %></td>
     <td><%= ep.ep_name %></td>
     <td><%= ep.ep_lastname %></td>
     <td><%= ep.program %></td>
     <td><%= ep.ep_manager_name %></td>
     <td><%= ep.ep_manager_email %></td>
     <td><%= link_to 'Show', ep %></td>
+    <% if session[:user].role=='Admin' %>
     <td><%= link_to 'Edit', edit_ep_path(ep) %></td>
     <td><%= link_to 'Destroy', ep, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </tbody>
