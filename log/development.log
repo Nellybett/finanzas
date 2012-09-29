@@ -53127,3 +53127,1218 @@ Served asset /pagination.png - 304 Not Modified (0ms)
 
 Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 02:48:20 -0430
 Served asset /loading.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 10:37:06 -0430
+Connecting to database specified by database.yml
+Processing by HomeController#principal as HTML
+  Rendered home/principal.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 598ms (Views: 597.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /application.css - 200 OK (24ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /egress_even_ts.css - 200 OK (1ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /egresses.css - 200 OK (1ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /ep_audits.css - 200 OK (4ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /events.css - 200 OK (24ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_e_ps.css - 200 OK (1ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_even_ts.css - 200 OK (3ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_t_ns.css - 200 OK (3ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /incomes.css - 200 OK (5ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /requests.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /tn_audits.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /jquery.js - 200 OK (56ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /egress_even_ts.js - 200 OK (1ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /egresses.js - 200 OK (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /events.js - 200 OK (1ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /ep_audits.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_e_ps.js - 200 OK (1ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_even_ts.js - 200 OK (3ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /incomes.js - 200 OK (4ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /income_t_ns.js - 200 OK (3ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /requests.js - 200 OK (3ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /tn_audits.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /users.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /application.js - 200 OK (42ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /logo.png - 200 OK (25ms)
+
+
+Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /slide-1.jpg - 200 OK (21ms)
+
+
+Started GET "/assets/slide-2.jpg" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /slide-2.jpg - 200 OK (17ms)
+
+
+Started GET "/assets/slide-3.jpg" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /slide-3.jpg - 200 OK (10ms)
+
+
+Started GET "/assets/slide-4.jpg" for 127.0.0.1 at 2012-09-29 10:37:08 -0430
+Served asset /slide-4.jpg - 200 OK (14ms)
+
+
+Started GET "/assets/slide-5.jpg" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /slide-5.jpg - 200 OK (26ms)
+
+
+Started GET "/assets/slide-6.jpg" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /slide-6.jpg - 200 OK (15ms)
+
+
+Started GET "/assets/buscar.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /buscar.png - 200 OK (87ms)
+
+
+Started GET "/assets/slide-7.jpg" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /slide-7.jpg - 200 OK (68ms)
+
+
+Started GET "/assets/arrow-prev.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /arrow-prev.png - 200 OK (76ms)
+
+
+Started GET "/assets/arrow-next.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /arrow-next.png - 200 OK (15ms)
+
+
+Started GET "/assets/example-frame.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /example-frame.png - 200 OK (8ms)
+
+
+Started GET "/assets/t1.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /t1.png - 200 OK (62ms)
+
+
+Started GET "/assets/t2.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /t2.png - 200 OK (149ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /n1.png - 200 OK (82ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /n2.png - 200 OK (122ms)
+
+
+Started GET "/assets/fb.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /fb.png - 200 OK (3ms)
+
+
+Started GET "/assets/tw.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /tw.png - 200 OK (1ms)
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /back.jpg - 200 OK (28ms)
+
+
+Started GET "/assets/slide-1.jpg?1348931228996" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/pagination.png" for 127.0.0.1 at 2012-09-29 10:37:09 -0430
+Served asset /pagination.png - 200 OK (24ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 10:37:10 -0430
+Served asset /loading.gif - 200 OK (23ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Processing by HomeController#principal as HTML
+  Parameters: {"buscar"=>"", "x"=>"19", "y"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/principal.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Served asset /ep_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Served asset /egress_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Served asset /egresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:53 -0430
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_t_ns.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_e_ps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /incomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /requests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /tn_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /egress_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /egresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /ep_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_e_ps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /incomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /income_t_ns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /requests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /tn_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /n1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /n2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-1.jpg?1348931274349" for 127.0.0.1 at 2012-09-29 10:37:54 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2012-09-29 10:38:15 -0430
+Served asset /back1.jpg - 200 OK (56ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Processing by HomeController#principal as HTML
+  Parameters: {"buscar"=>"", "x"=>"19", "y"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/principal.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /ep_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /egresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_e_ps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /egress_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_t_ns.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /incomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /requests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /tn_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /egress_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /ep_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /egresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_e_ps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_t_ns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /income_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /incomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /requests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /tn_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2012-09-29 10:40:31 -0430
+Served asset /slide-1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buscar.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /buscar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-2.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-6.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-5.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-4.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-3.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-prev.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /arrow-prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-7.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-1.jpg?1348931432145" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/arrow-next.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /arrow-next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/example-frame.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /example-frame.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t1.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /t1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t2.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /t2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /n1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /n2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /fb.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /back.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /pagination.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tw.png" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /tw.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 10:40:32 -0430
+Served asset /loading.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2012-09-29 10:40:42 -0430
+Served asset /back1.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Processing by HomeController#principal as HTML
+  Parameters: {"buscar"=>"", "x"=>"19", "y"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/principal.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /egress_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /egresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /ep_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_e_ps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_t_ns.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /incomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /requests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /tn_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /egresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /egress_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /ep_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_e_ps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /income_t_ns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /requests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /incomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /tn_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buscar.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /buscar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-3.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-4.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-2.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-5.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-6.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-7.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-prev.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /arrow-prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-next.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /arrow-next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/example-frame.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /example-frame.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t1.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /t1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t2.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /t2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /n1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /n2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /fb.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tw.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /tw.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-1.jpg?1348931986782" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/pagination.png" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /pagination.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /back.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /loading.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2012-09-29 10:49:46 -0430
+Served asset /back1.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Processing by HomeController#principal as HTML
+  Parameters: {"buscar"=>"", "x"=>"19", "y"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/principal.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /egress_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /egresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /ep_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_e_ps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_t_ns.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /incomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /requests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /tn_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /egress_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /egresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /ep_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_e_ps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /income_t_ns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /incomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /tn_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /requests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buscar.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /buscar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-3.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-2.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-5.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-4.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-6.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-7.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-prev.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /arrow-prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-next.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /arrow-next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/example-frame.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /example-frame.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t1.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /t1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t2.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /t2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /n1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /n2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-1.jpg?1348932031495" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/fb.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /fb.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tw.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /tw.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /back.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.png" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /pagination.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /loading.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2012-09-29 10:50:31 -0430
+Served asset /back1.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Processing by HomeController#principal as HTML
+  Parameters: {"buscar"=>"", "x"=>"19", "y"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  Rendered home/principal.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/egress_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /egress_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /egresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /ep_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_e_ps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_even_ts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_t_ns.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /incomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /requests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /tn_audits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egress_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /egress_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/egresses.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /egresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ep_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /ep_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_e_ps.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_e_ps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_even_ts.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_even_ts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/income_t_ns.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /income_t_ns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/incomes.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /incomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /requests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tn_audits.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /tn_audits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-2.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/buscar.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /buscar.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-4.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-3.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-5.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-6.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-7.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-prev.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /arrow-prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/example-frame.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /example-frame.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t1.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /t1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow-next.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /arrow-next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t2.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /t2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n1.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /n1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/n2.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /n2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /fb.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tw.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /tw.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /back.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide-1.jpg?1348932112622" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /slide-1.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/pagination.png" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /pagination.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /loading.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/back1.jpg" for 127.0.0.1 at 2012-09-29 10:51:52 -0430
+Served asset /back1.jpg - 304 Not Modified (0ms)
