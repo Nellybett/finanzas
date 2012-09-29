@@ -4,45 +4,45 @@
 			<div id="slides">
 				<div class="slides_container">
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/jliba/4665625073/" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<img src="/assets/slide-1.jpg" width="570" height="270" alt="Slide 1">
 						<div class="caption" style="bottom:0">
-							<p>Happy Bokeh Thursday!</p>
+							<p>Descubrir es mirar lo mismo que esta viendo todo el mundo y percibirlo de manera diferente</p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<img src="/assets/slide-2.jpg" width="570" height="270" alt="Slide 2">
 						<div class="caption">
-							<p>Taxi</p>
+							<p>To Do!!</p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/childofwar/2984345060/" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<img src="/assets/slide-3.jpg" width="570" height="270" alt="Slide 3">
 						<div class="caption">
-							<p>Happy Bokeh raining Day</p>
+							<p>Be the change you want to see in the world</p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/b-tal/117037943/" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+						<img src="/assets/slide-4.jpg" width="570" height="270" alt="Slide 4">
 						<div class="caption">
-							<p>We Eat Light</p>
+							<p>Work hard, party harder!! </p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/bu7amd/3447416780/" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+						<img src="/assets/slide-5.jpg" width="570" height="270" alt="Slide 5">
 						<div class="caption">
-							<p>&ldquo;I must go down to the sea again, to the lonely sea and the sky...&rdquo;</p>
+							<p>&ldquo;Achieve National Conference - Venezuela 2012&rdquo;</p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/streetpreacher/2078765853/" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+						<img src="/assets/slide-6.jpg" width="570" height="270" alt="Slide 6">
 						<div class="caption">
-							<p>twelve.inch</p>
+							<p>Your next step</p>
 						</div>
 					</div>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="/assets/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+						<img src="/assets/slide-7.jpg" width="570" height="270" alt="Slide 7">
 						<div class="caption">
-							<p>Save my love for loneliness</p>
+							<p>AIESEC USB</p>
 						</div>
 					</div>
 				</div>
@@ -58,16 +58,16 @@
 			<div class="titulo_bloque">Tips</div>
 
 			<div class="item">
-				<div class="titulo_item">Titulo Tip Nro 1</div>
+				<div class="titulo_item">Tip F&L</div>
 				<div class="foto"><img src="/assets/t1.png">
 				</div>
-				<div class="articulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget purus sem. Donec odio risus, semper convallis dapibus quis, tristique vitae quam. Nullam tristique ante eget magna ullamcorper blandit[...]</div>
+				<div class="articulo">Cada area debe entregar un presupuesto de ingresos y egresos a su VP F&L los 25 de cada mes para garantizar un buen flujo de capital mensual </div>
 			</div>
 			<div class="item">
-				<div class="titulo_item">Titulo Tip Nro 2</div>
+				<div class="titulo_item">Tip COMM</div>
 				<div class="foto"><img src="/assets/t2.jpg">
 				</div>
-				<div class="articulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget purus sem. Donec odio risus, semper convallis dapibus quis, tristique vitae quam. Nullam tristique ante eget magna ullamcorper blandit[...]</div>
+				<div class="articulo">Demostrar que el area no se trata solo de hacer publicidad, involucra marketing...</div>
 			</div>
 
 		</div>
@@ -76,10 +76,10 @@
 				<div class="titulo_bloque">Noticias</div>
 
 				<div class="item">
-					<div class="titulo_item">Titulo Noticia Nro 1</div>
+					<div class="titulo_item">Returnees</div>
 					<div class="foto"><img src="/assets/n1.jpg">
 					</div>
-					<div class="articulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget purus sem. Donec odio risus, semper convallis dapibus quis, tristique vitae quam. Nullam tristique ante eget magna ullamcorper blandit[...]</div>
+					<div class="articulo">El viernes celebramos el regreso de nuestros Eps en el Leon. Bienvenidos y esperamos seguir en contacto, son parte de la gran familia AIESECA</div>
 				</div>
 				<div class="item">
 					<div class="titulo_item">
